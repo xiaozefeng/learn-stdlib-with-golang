@@ -35,4 +35,27 @@ func main() {
 	}
 	fmt.Printf("string(content) = %+v\n", string(content))
 
+	// 创建临时文件
+	// c := []byte("temporary file's content")
+	// tempFile, err := ioutil.TempFile("./", "example")
+	// if err != nil {
+	//     log.Fatal(err)
+	// }
+	// defer os.Remove(tempFile.Name())
+	// tempFile.Write(c)
+	// if err := tempFile.Close(); err != nil {
+	//     log.Fatal(err)
+	// }
+
+	// 创建临时目录
+	// c := []byte("temp file content")
+	// tempDir, err := ioutil.TempDir("./", "example")
+	// if err != nil {
+	//     log.Fatal(err)
+	// }
+	// temfn := filepath.Join(tempDir, "tempfile")
+	// if err := ioutil.WriteFile(temfn, c, 0666); err != nil {
+	//     log.Printf("err = %+v\n", err)
+	// }
+
 }
